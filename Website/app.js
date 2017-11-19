@@ -1,4 +1,4 @@
-// Create a "close" button and append it to each list item
+// creating close button and adding it too each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -9,7 +9,7 @@ for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// Clicking close button hides corresponding candidate
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -19,7 +19,7 @@ for (i = 0; i < close.length; i++) {
     }
 }
 
-// Create a new list item when clicking on the "Add" button
+// Create a new candidate when clicking the create button
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
